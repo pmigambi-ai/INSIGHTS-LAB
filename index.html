@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>INSIGHT LAB - Agriconnect</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+      }
+      header {
+        background: linear-gradient(
+            135deg,
+            rgba(76, 175, 80, 0.8),
+            rgba(46, 125, 50, 0.8)
+          ),
+          url("images/header-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+        animation: fadeIn 2s;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 3em;
+      }
+      header p {
+        font-size: 1.2em;
+      }
+      nav {
+        background-color: #2e7d32;
+        padding: 10px 0;
+        text-align: center;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      nav li {
+        margin: 0 15px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      nav a:hover {
+        background-color: #4caf50;
+      }
+      section {
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .team,
+      .about,
+      .case-studies,
+      .project,
+      .challenges,
+      .prototype,
+      .vision,
+      .contact {
+        margin-bottom: 60px;
+      }
+      .vision {
+        background-color: #e8f5e8;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        border-left: 5px solid #4caf50;
+      }
+      .project {
+        background-color: #e8f5e8;
+        border-radius: 10px;
+        padding: 20px;
+      }
+      .case-studies {
+        background-color: #e8f5e8;
+        border-radius: 10px;
+        padding: 20px;
+        border-left: 5px solid #4caf50;
+      }
+      .challenges {
+        background-color: #e8f5e8;
+        border-radius: 10px;
+        padding: 20px;
+        border-left: 5px solid #4caf50;
+      }
+      .challenge {
+        margin-bottom: 40px;
+      }
+      .challenge iframe {
+        width: 100%;
+        max-width: 560px;
+        height: 315px;
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+      }
+      .team {
+        display: flex;
+        justify-content: center;
+        overflow-x: auto;
+      }
+      .member {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        width: 250px;
+        flex-shrink: 0;
+        transition: transform 0.3s;
+      }
+      .member:hover {
+        transform: scale(1.05);
+      }
+      .member img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        object-fit: cover;
+      }
+      .prototype img {
+        width: 100%;
+        max-width: 700px;
+        border-radius: 10px;
+        display: block;
+        margin: 20px auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      .contact {
+        background: #333;
+        color: white;
+        text-align: center;
+      }
+      .contact a {
+        color: #4caf50;
+        text-decoration: none;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #2e7d32;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>INSIGHT LAB</h1>
+      <p>Innovating for a Sustainable Future Through Agriculture</p>
+      <i class="fas fa-seedling" style="font-size: 2em"></i>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#case-studies">Our Research</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#challenges">Challenges</a></li>
+        <li><a href="#prototype">OUR PROTOTYPE</a></li>
+        <li><a href="#vision">Our Vision</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="team" class="team">
+      <h2>Meet Our Team</h2>
+      <div class="member">
+        <img src="Altesse (2).jpeg" alt="Altesse Nesta" />
+        <h3>Altesse Nesta</h3>
+        <p>Role: Lead Innovator<br />Expertise: Tech Integration</p>
+      </div>
+      <div class="member">
+        <img src="Briella.jpeg" alt="Berwa Briella" />
+        <h3>Berwa Briella</h3>
+        <p>Role: Project Manager<br />Expertise: Agriculture Strategy</p>
+      </div>
+      <div class="member">
+        <img src="Teta.jpeg" alt="Nziza Teta" />
+        <h3>Nziza Teta</h3>
+        <p>Role: Developer<br />Expertise: AI & Apps</p>
+      </div>
+      <div class="member">
+        <img src="kenny.jpeg" alt="Kalisa Kenny" />
+        <h3>Kalisa Kenny</h3>
+        <p>Role: Researcher<br />Expertise: Sustainable Farming</p>
+      </div>
+      <div class="member">
+        <img src="Prince (2).jpeg" alt="Prince Migambi" />
+        <h3>Prince Migambi</h3>
+        <p>Role: Outreach Specialist<br />Expertise: Community Engagement</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>
+        INSIGHT LAB is a dynamic team of five passionate innovators dedicated to
+        tackling real-world challenges. We combine technology, creativity, and
+        expertise to drive positive change. Our mission is to empower communities
+        through smart, sustainable solutions.
+      </p>
+      <img
+        src="images/group-photo.jpg"
+        alt="INSIGHT LAB Team"
+        style="width: 100%; max-width: 600px; border-radius: 10px; display: block; margin: 20px auto"
+      />
+    </section>
+
+    <section id="case-studies" class="case-studies">
+      <h2>Our Research</h2>
+      <h3>Rwanda: Unemployment and the Underrated Power of Agriculture</h3>
+      <p>
+        Rwanda, a rapidly developing nation in East Africa, faces significant
+        unemployment challenges. As of 2024, the national unemployment rate stands
+        at approximately 16.5% (per World Bank data), with youth unemployment
+        reaching up to 20%. This is exacerbated by a growing population and limited
+        industrial opportunities, leaving many skilled individuals without stable
+        work.
+      </p>
+      <p>
+        Despite this, agriculture remains a cornerstone of Rwanda's economy,
+        employing over 70% of the workforce and contributing about 30% to GDP.
+        However, it's often underrated as a sector for innovation and job
+        creation. Traditional farming methods are labor-intensive but low-yield,
+        leading to underemployment. INSIGHT LAB's Agriconnect project addresses
+        this by modernizing agriculture—integrating tech like drones for pest
+        control and apps for market access—to create high-value jobs in
+        agribusiness, processing, and logistics.
+      </p>
+      <ul>
+        <li>
+          <strong>Key Insights:</strong> Rwanda's government recognizes agriculture's
+          potential, with initiatives like the National Agriculture Policy aiming
+          to boost productivity. Yet, without tech upgrades, the sector struggles to
+          attract youth, who see it as outdated.
+        </li>
+        <li>
+          <strong>Agriconnect's Role:</strong> By piloting in Rwanda, we could reduce
+          unemployment by 5-10% in target areas through skill training and tech
+          adoption, proving agriculture's untapped potential.
+        </li>
+      </ul>
+      <img
+        src="images/rwanda-agriculture.jpg"
+        alt="Agriculture in Rwanda"
+        style="width: 100%; max-width: 600px; border-radius: 10px; display: block; margin: 20px auto"
+      />
+    </section>
+
+    <section id="project" class="project">
+      <h2>Our Project: Agriconnect</h2>
+      <p>
+        Agriconnect is our flagship initiative aimed at revolutionizing job creation
+        in agriculture. By modernizing traditional farming practices with
+        cutting-edge technology—like AI-driven crop monitoring, automated irrigation
+        systems, and blockchain for supply chain transparency—we're creating
+        sustainable jobs in rural and urban areas alike. Imagine a world where
+        farmers connect directly with consumers, reducing waste and boosting
+        economies!
+      </p>
+      <ul>
+        <li>
+          <strong>Key Features:</strong> Real-time data analytics, mobile apps for
+          farmers, and community training programs.
+        </li>
+        <li>
+          <strong>Impact:</strong> Generating thousands of jobs by making agriculture
+          efficient, accessible, and profitable.
+        </li>
+      </ul>
+      <img
+        src="images/agriconnect-demo.jpg"
+        alt="Agriconnect in Action"
+        style="width: 100%; max-width: 600px; border-radius: 10px; display: block; margin: 20px auto"
+      />
+    </section>
+
+    <section id="challenges" class="challenges">
+      <h2>Our Challenges</h2>
+      <div class="challenge">
+        <h3>CHALLENGE 1</h3>
+        <p>
+          In challenge one we introduced ourselves by saying who we are and what
+          drives us, a fun fact about us and what we hope to gain in E-lab.
+        </p>
+        <iframe
+          src="https://www.youtube.com/embed/eDeXVEFgqks"
+          title="Challenge 1 Video"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="challenge">
+        <h3>CHALLENGE 2</h3>
+        <p>
+          In challenge 2 which is Discover Africa, we had to choose an African
+          community and tell a story the world has not heard about that community so
+          our think tank chose The Herero community from Namibia. We found that the
+          Herero community of Namibia, known for their vibrant traditional dress,
+          has a history the world rarely hears. They endured one of the first
+          genocides of the 20th century under German colonial rule but have shown
+          remarkable resilience. Today, they preserve their language, traditions,
+          and pastoral lifestyle, with Herero women playing a key role in passing
+          down culture. Their story is one of strength, survival, and cultural pride.
+        </p>
+        <iframe
+          src="https://www.youtube.com/embed/Rk0Ip2EBeYA"
+          title="Challenge 2 Video"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="challenge">
+        <h3>CHALLENGE 3</h3>
+        <p>
+          In challenge 3 which is Help-Lab we helped two students Paid school fees for
+          a student who study in Gs Gatenga s2
+        </p>
+        <iframe
+          src="https://www.youtube.com/embed/MBCN-Wz4GVU"
+          title="Challenge 3 Video"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="challenge">
+        <h3>CHALLENGE 4</h3>
+        <p>
+          In challenge 4 which is Treasure Hunt we went to ENAS COFFEE DRY MILL located
+          near Ndera cell so we found that Agriculture can help tackle unemployment
+          by creating jobs in farming and equipment services. Companies like Hunt for
+          Treasure support this through modern farming tools and training.
+          Expanding these services and promoting agricultural entrepreneurship can
+          boost employment and economic growth.
+        </p>
+        <iframe
+          src="https://www.youtube.com/embed/MBCN-Wz4GVU"
+          title="Challenge 4 Video"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section id="prototype" class="prototype">
+      <h2>OUR PROTOTYPE</h2>
+      <img
+        src="images/prototype.jpg"
+        alt="Prototype Mindmap"
+        style="width: 100%; max-width: 700px; border-radius: 10px; display: block; margin: 20px auto"
+      />
+    </section>
+
+    <section id="vision" class="vision">
+      <h2>Our Vision</h2>
+      <p>
+        To make agriculture a tech-driven career path where youth farmers and
+        investors collaborate to build Rwanda's digital agriculture future.
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get in Touch</h2>
+      <p>Interested in collaborating or learning more about Agriconnect? Reach out!</p>
+      <p><i class="fas fa-envelope"></i> Email: insights@gmail.com</p>
+      <p><i class="fas fa-phone"></i> Phone: +250793931353</p>
+      <p>
+        <i class="fab fa-linkedin"></i>
+        <a href="https://linkedin.com/company/insightlab">LinkedIn</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 INSIGHT LAB. All rights reserved. Powered by Innovation.</p>
+    </footer>
+
+    <script>
+      // Smooth scrolling for navigation links
+      document.querySelectorAll("nav a").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          target.scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
